@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Carta de Amor com Música MP3</title>
+<style>
+  body {
+    background: linear-gradient(135deg, #f8e9d2, #f3d3b2);
+    font-family: 'Georgia', serif;
+    color: #5b3a29;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+  }
+  .carta-container {
+    background: #fffaf0;
+    max-width: 650px;
+    padding: 40px 50px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    border-radius: 16px;
+    border: 1px solid #e2d6c7;
+    line-height: 1.6;
+    position: relative;
+    text-align: justify;
+  }
+  .carta-container::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    border: 3px solid #d2b48c;
+    border-radius: 12px;
+    pointer-events: none;
+  }
+  h1 {
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    font-size: 2.8em;
+    margin-bottom: 0.3em;
+    color: #7b4f24;
+    text-align: center;
+  }
+  p {
+    font-size: 1.2em;
+    margin-bottom: 1.3em;
+  }
+  .assinatura {
+    margin-top: 2.5em;
+    font-weight: bold;
+    font-size: 1.3em;
+    text-align: right;
+  }
+  .destaque {
+    font-weight: 700;
+    color: #a65c1a;
+  }
+  .player-container {
+    margin-top: 30px;
+    text-align: center;
+  }
+  audio {
+    width: 100%;
+    max-width: 320px;
+    outline: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+</style>
+</head>
+<body>
+
+  <div class="carta-container">
+    <h1>Meu amor,</h1>
+    <p>Eu só queria te dizer o quanto você é importante pra mim e o quanto transforma todos os meus dias. Desde que você entrou na minha vida, tudo ficou mais bonito, mais leve e mais feliz. Você é a pessoa que faz meu coração sorrir, que me faz acordar com vontade de viver e sonhar. Um simples <span class="destaque">"eu te amo"</span> vindo de você já é capaz de transformar qualquer momento difícil em algo suportável, e só de ouvir sua voz, meu mundo fica em paz.</p>
+    <p>Eu sonho todos os dias com a nossa vida juntos. Quero que a gente construa nossa história, que a gente se case, tenha a bênção de Deus, forme uma linda família e viva o tipo de amor que dura pra sempre. Quero nossos dois gatos, nossos dois cachorros e todos os planos e sonhos realizados, porque com você eu sei que tudo é possível.</p>
+    <p>Eu sei que a nossa distância é grande e que moramos longe um do outro, mas nada disso diminui o que eu sinto por você. Eu sou capaz de esperar o tempo que for, porque o que eu sinto é verdadeiro e vale cada segundo. Eu quero viver a minha vida ao seu lado, por 1000 ou 3000 mil anos, ou pelo tempo que Deus permitir. Você apareceu quando eu estava no fundo do poço, quando eu não acreditava mais em mim, e me mostrou o que é amor, carinho, cuidado e felicidade.</p>
+    <p>Por isso, eu, <span class="destaque">Samuel</span>, te amo mais do que consigo colocar em palavras, e não importa o que aconteça, você vai ser pra sempre o amor da minha vida. Eu quero passar todos os meus dias com você, construir nossos sonhos e te fazer feliz, porque você merece o mundo e eu quero ser quem vai te dar isso.</p>
+    <p class="destaque" style="text-align:center; font-size:1.5em; margin-top: 2em;">EU TE AMO MUITOOOO!!!</p>
+    <p class="assinatura">Com todo o meu amor,<br /><strong>Samuel</strong></p>
+
+    <div class="player-container">
+      <audio controls autoplay loop>
+        <source src="musica.mp3" type="audio/mpeg" />
+        Seu navegador não suporta o elemento de áudio.
+      </audio>
+    </div>
+  </div>
+
+</body>
+</html>
